@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nepali Food Delivery Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Nepali Cuisine</h1>
+        <p>"Experience the rich flavors of authentic Nepali cuisine from the comfort of your home. Our carefully crafted dishes bring the taste of the Himalayas to your doorstep, offering a perfect blend of tradition and freshness. Whether you're craving momos, a hearty Thakali set, or a warm bowl of Thenduk, we've got you covered!"</p>
+    </header>
+    
+    <div class="menu-container">
+     
+        <div class="menu-box">
+            <h2>Popular Dishes</h2>
+            
+            <div class="dish">
+                <img src="https://i.pinimg.com/control/564x/e8/35/ed/e835ed89023c2a6d2d1933321d59efc4.jpg" alt="Momo">
+                <div class="dish-info">
+                    <h3>Momo</h3>
+                    <p>Steamed dumplings filled with chicken, vegetables, or pork.</p>
+                    <p><strong>Price:</strong> $6.99</p>
+                </div>
+            </div>
+            
+            <div class="dish">
+                <img src="https://i.pinimg.com/474x/88/e7/ea/88e7ea3b89328685ea8f88edb60675f9.jpg" alt="Thakali Set">
+                <div class="dish-info">
+                    <h3>Thakali Set</h3>
+                    <p>A traditional Nepali meal with rice, lentils, and curries.</p>
+                    <p><strong>Price:</strong> $10.99</p>
+                </div>
+            </div>
+            
+            <div class="dish">
+                <img src="https://assets.epicurious.com/photos/624cb86f6b6eb685b358da28/1:1/w_2560%2Cc_limit/Thenthuk_RECIPE_v2_040122_31609.jpg" alt="Thenduk">
+                <div class="dish-info">
+                    <h3>Thenduk</h3>
+                    <p>A traditional Nepali noodle soup with vegetables and meat, perfect for cold weather.</p>
+                    <p><strong>Price:</strong> $8.99</p>
+                </div>
+            </div>
+            
+            <div class="dish">
+                <img src="https://themeaten.pk/wp-content/uploads/2024/03/12.Soft-Drinks.jpg" alt="Cold Drinks">
+                <div class="dish-info">
+                    <h3>Cold Drinks</h3>
+                    <p>Refreshing cold beverages to accompany your meal. Choose from Coke, Sprite, or Fanta.</p>
+                    <p><strong>Price:</strong> $1.99</p>
+                </div>
+            </div>
+        </div>
+ <div class="review-box">
+            <h2>Customer Reviews</h2>
+            <div class="review">
+                <p><strong>Sam:</strong> "The momo was absolutely delicious, soft and flavorful!"</p>
+            </div>
+            <div class="review">
+                <p><strong>Sophia:</strong> "The Thakali set made me feel like I was back in Nepal. Highly recommended!"</p>
+            </div>
+            <div class="review">
+                <p><strong>Raj:</strong> "The food arrived quickly, and everything was hot and fresh. Will order again!"</p>
+            </div>
+            <div class="review">
+                <p><strong>Emily:</strong> "Amazing flavors! The spices in the Thakali set were perfect. So happy with the service!"</p>
+            </div>
+        </div>
+    </div>
+   
+        <h2>Place Your Order</h2>
+        <form action="submit_order.php" method="POST" class="order-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Delivery Address:</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+
+            <label for="item">Select Item:</label>
+            <select id="item" name="item" required>
+                <option value="">-- Select a Dish --</option>
+                <option value="momo">Momo - $6.99</option>
+                <option value="thakali">Thakali Set - $10.99</option>
+                <option value="thenduk">Thenduk - $8.99</option>
+                <option value="cold_drink">Cold Drinks - $1.99</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+
+            <label for="instructions">Special Instructions (Optional):</label>
+            <textarea id="instructions" name="instructions" rows="3"></textarea>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+
+ 
+    <footer>
+        <h2>Contact Us</h2>
+        <p>If you have any questions or want to place a bulk order, feel free to contact us:</p>
+        <p>Email: <a href="mailto:info@nepalifooddelivery.com">info@nepalifooddelivery.com</a></p>
+        <p>Phone: +123-456-7890</p>
+        <p>Delivery Adress:</p>
+    </footer>
+</body>
+</html>

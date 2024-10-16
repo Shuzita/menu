@@ -1,0 +1,187 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(to right, #ffafbd, #ffc3a0);
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: 'Times New Roman', serif;
+    font-size: 3em;
+    color: #fff;
+    text-shadow: 2px 2px #541606;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #fff;
+    padding: 0 10%;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.menu-box, .review-box {
+    width: 45%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.menu-box h2, .review-box h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #ff6f61;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #ffa07a;
+}
+
+.dish, .review {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.dish img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.dish-info {
+    font-size: 1.1em;
+}
+
+.dish-info h3 {
+    color: #ff6f61;
+    margin-bottom: 10px;
+}
+
+.dish-info p {
+    margin-bottom: 5px;
+}
+
+.review p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.review strong {
+    color: #ff6f61;
+}
+
+.menu-box {
+    background: linear-gradient(135deg, #ff6f61 10%, #ffd194 100%);
+}
+
+.review-box {
+    background: linear-gradient(135deg, #fbc2eb 10%, #a6c1ee 100%);
+}
+
+
+footer {
+    text-align: center;
+    background-color: #ffafbd;
+    color: #fff;
+    padding: 20px;
+    margin-top: 40px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-form-section {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-form-section h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #ff6f61;
+    text-shadow: 2px 2px #ffa07a;
+    margin-bottom: 20px;
+}
+
+.order-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-form label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.order-form input, .order-form select, .order-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.order-form textarea {
+    resize: vertical;
+}
+
+.order-form button {
+    padding: 10px 15px;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-shadow: 1px 1px #ffafbd;
+}
+
+.order-form button:hover {
+    background-color: #ff3f3f;
+}
+
+.order-form input:focus, .order-form textarea:focus, .order-form select:focus {
+    border-color: #ff6f61;
+    outline: none;
+}
+
+
+footer h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 1.1em;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
